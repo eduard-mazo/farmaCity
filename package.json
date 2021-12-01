@@ -1,0 +1,16 @@
+{
+  "name": "nodexcel",
+  "version": "1.0.0",
+  "description": "Testing excel functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slashes": "^2.0.2",
+    "xlsx": "^0.16.9",
+    "xml2json": "^0.12.0"
+  }
+}
