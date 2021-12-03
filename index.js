@@ -3,17 +3,24 @@ const xml2json = require('xml2json');
 const filepath = __dirname + '\\facturas\\';
 
 async function parseXml(filename) {
-    console.log('Parsing ' + filename);
     var json;
     var invoice;
     var items;
     fs.readFile(filepath + filename, (err, data) => {
         json = JSON.parse(xml2json.toJson(data));
+        console.log(`Parsing: ${filename} Emisor ${json.AttachedDocument["cac:SenderParty"]["cac:PartyTaxScheme"]["cbc:RegistrationName"]}`);
         invoice = JSON.parse(xml2json.toJson(json.AttachedDocument["cac:Attachment"]["cac:ExternalReference"]["cbc:Description"]))
-        items = invoice.Invoice["cac:InvoiceLine"]
-        items.forEach(item => {
-            decodeItem(item)
-        })
+        try {
+            items = invoice.Invoice["cac:InvoiceLine"];
+            items.forEach(item => {
+                decodeItem(item)
+            })
+        } catch (error) {
+            console.error(error);
+            console.log(`Archivo: ${filename} Emisor: ${json.AttachedDocument["cac:SenderParty"]["cac:PartyTaxScheme"]["cbc:RegistrationName"]}`);
+        }
+        
+
     })
 }
 
