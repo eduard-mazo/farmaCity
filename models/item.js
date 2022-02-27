@@ -15,14 +15,6 @@ const itemSchema = new Schema({
     type: Number,
     default: 0,
   },
-  qty: {
-    type: Number,
-    default: 0,
-  },
-  total: {
-    type: Number,
-    default: 0,
-  },
 });
 
 module.exports = model('Item', itemSchema);
