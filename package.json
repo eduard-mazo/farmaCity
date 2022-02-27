@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fast-csv": "^4.3.6",
+    "mongodb": "^4.4.0",
+    "mongoose": "^6.2.3",
     "slashes": "^2.0.2",
     "xlsx": "^0.16.9",
     "xml2json": "^0.12.0"
