@@ -1,8 +1,13 @@
 const { Schema, model } = require('mongoose');
 
 const itemSchema = new Schema({
+  date: {
+    type: Date,
+    default: Date.now,
+  },
   cod: {
     type: Number,
+    unique: true,
   },
   desc: {
     type: String,
@@ -12,8 +17,14 @@ const itemSchema = new Schema({
     default: 19,
   },
   amount: {
-    type: Number,
-    default: 0,
+    type: Array,
+    default: [
+      {
+        unidad: 0,
+        sobre: [0, 0],
+        caja: [0, 0],
+      },
+    ],
   },
 });
 

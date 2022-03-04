@@ -5,7 +5,7 @@ const fs = require('fs');
 async function begin() {
   console.log('Starting DB...');
   try {
-    fs.readFile('lunaItemsDB.json', async (err, data) => {
+    fs.readFile('json/lunaItemsDB.json', async (err, data) => {
       await conection.main();
       if (err) throw err;
       let items = JSON.parse(data);

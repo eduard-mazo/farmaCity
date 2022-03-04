@@ -1,21 +1,30 @@
 const fs = require('fs');
 const Item = require('./models/item.js');
 
-const regex = /,/gm;
+const regex = /,|\./gm;
 let items;
 let labs = {};
 try {
-  fs.readFile('lunaItemsDB.json', (err, data) => {
+  fs.readFile('json/lunaItemsDB.json', (err, data) => {
     if (err) throw err;
     items = JSON.parse(data);
     for (i in items) {
-      parseUnidad(items[i]);
-      parseIVA(items[i]);
+      parsePrice(items[i], 'UNIDAD');
+      parsePrice(items[i], 'IVA');
+      parsePrice(items[i], 'SOBRE');
+      parsePrice(items[i], 'CAJA');
       items[i] = new Item({
         cod: randomId(),
         desc: items[i]['PRODUCTO'],
         tax: items[i]['IVA'],
-        amount: items[i]['UNIDAD'],
+        amount: [
+          {
+            unidad: items[i]['UNIDAD'],
+            sobre: items[i]['SOBRE'],
+            caja: items[i]['CAJA'],
+          },
+        ],
+        date: Math.floor(Date.now()),
       });
       parseByLab(items[i]);
     }
@@ -32,9 +41,13 @@ function priceFormated(val) {
 
 function parseByLab(item) {
   const desc = item['desc'];
-  let name = desc.slice(desc.indexOf('(') + 1, desc.lastIndexOf(')'));
+  let name;
 
-  if ((desc.indexOf('(') && desc.lastIndexOf(')')) === -1) name = 'GENERICO';
+  if ((desc.indexOf('(') && desc.lastIndexOf(')')) === -1) {
+    name = 'GENERICO';
+  } else {
+    name = desc.slice(desc.indexOf('(') + 1, desc.lastIndexOf(')'));
+  }
 
   if (!labs[name]) {
     labs[name] = {
@@ -46,14 +59,25 @@ function parseByLab(item) {
   }
 }
 
-function parseUnidad(item) {
-  item['UNIDAD'] = isNaN(priceFormated(item['UNIDAD']))
-    ? 0
-    : priceFormated(item['UNIDAD']);
-}
-
-function parseIVA(item) {
-  item['IVA'] = isNaN(priceFormated('IVA')) ? 0 : priceFormated('IVA');
+function parsePrice(item, size) {
+  if (size === 'CAJA' || size === 'SOBRE') {
+    let price, qty;
+    if ((item[size].indexOf('(') && item[size].lastIndexOf(')')) === -1) {
+      item[size] = [0, 0];
+    } else {
+      qty = parseInt(
+        item[size].slice(
+          item[size].indexOf('X') + 1,
+          item[size].lastIndexOf(')')
+        )
+      );
+      price = priceFormated(item[size].slice(0, item[size].lastIndexOf('X')));
+      item[size] = [size === 'SOBRE' ? price / qty : price, qty];
+    }
+  } else {
+    const valFormatted = priceFormated(item[size]);
+    item[size] = !isNaN(valFormatted) ? valFormatted : 0;
+  }
 }
 
 function randomId() {
