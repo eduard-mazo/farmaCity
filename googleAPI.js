@@ -12,6 +12,7 @@ const oauth2Client = new google.auth.OAuth2(
 const app = express();
 
 var messagesCount = 0;
+var messagesList = [];
 
 app.get('/', (req, res) => {
   res.send(getAuth());
@@ -73,22 +74,42 @@ function listMessages(auth, page) {
   const gmail = google.gmail({ version: 'v1', auth });
   const options = {
     userId: 'me',
-    labelIds: 'Label_7296006133340362950',
+    //labelIds: 'Label_7296006133340362950',
   };
   if (page) {
     options.pageToken = page;
   }
   gmail.users.messages.list(options, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
+    let i = 0;
+    while (i < res.data.messages.length) {
+      messagesList.push(res.data.messages[i]);
+      i++;
+    }
+    messagesCount += res.data.messages.length;
     if (res.data.nextPageToken) {
-      messagesCount += res.data.messages.length;
       listMessages(auth, res.data.nextPageToken);
     } else {
-      messagesCount += res.data.messages.length;
-      console.log('listo el pollo -> Total de mensajes: ' + messagesCount);
-      getMessage(auth, res.data.messages[0].id);
+      i = 0;
+      console.log(messagesList.length);
+      /*
+      while (i < messagesList.length) {
+        getMessage(auth, messagesList[i].id);
+        i++;
+      }
+      */
+      while (i < 400) {
+        delayGet(auth, messagesList[i].id);
+        i++;
+      }
     }
   });
+}
+
+function delayGet(auth, id) {
+  setTimeout(() => {
+    getMessage(auth, id);
+  }, 150);
 }
 
 function getMessage(auth, id) {
@@ -99,26 +120,39 @@ function getMessage(auth, id) {
   };
   gmail.users.messages.get(options, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
-    console.log(res.data.payload.parts);
-    getMessageAtt(auth, id, res.data.payload.parts[1].body.attachmentId);
+    const mensaje = res.data.payload.headers;
+    let i = 0;
+    while (i < mensaje.length) {
+      if (
+        mensaje[i].name == 'Subject' &&
+        mensaje[i].value.indexOf('900590912') != -1
+      ) {
+        console.log(mensaje[i].value);
+        getMessageAtt(auth, id, res.data.payload);
+      }
+      i++;
+    }
   });
 }
 
-function getMessageAtt(auth, messageId, id) {
+function getMessageAtt(auth, messageId, payload) {
   const gmail = google.gmail({ version: 'v1', auth });
   const options = {
     userId: 'me',
     messageId,
-    id,
+    id: payload.parts[1].body.attachmentId,
   };
   gmail.users.messages.attachments.get(options, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
     console.log(res.data.size);
     let buff = Buffer.from(res.data.data, 'base64');
 
-    fs.writeFile('my-file.zip', buff, (err) => {
+    fs.writeFile('facturasZip/' + payload.parts[1].filename, buff, (err) => {
       if (err) throw err;
-      console.log('The binary data has been decoded and saved to my-file.zip');
+      console.log(
+        'The binary data has been decoded and saved to ' +
+          payload.parts[1].filename
+      );
     });
   });
 }
