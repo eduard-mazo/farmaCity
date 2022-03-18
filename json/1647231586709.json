@@ -1,0 +1,95 @@
+[
+	{
+		"cbc:ID": "1",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "NIU", "$t": "10.00" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "28280.00" },
+		"cac:Item": {
+			"cbc:Description": "EVINET (LEVONORGESTREL 0.75 MG ) CJA X 2 TAB COLMED",
+			"cac:SellersItemIdentification": { "cbc:ID": "COLM16" },
+			"cac:StandardItemIdentification": {
+				"cbc:ID": { "schemeID": "999", "schemeName": "Estándar de adopción del contribuyente", "$t": "COLM16" }
+			}
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "2828.00" },
+			"cbc:BaseQuantity": { "unitCode": "NIU", "$t": "10.00" }
+		}
+	},
+	{
+		"cbc:ID": "2",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "NIU", "$t": "2.00" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "11300.00" },
+		"cac:Item": {
+			"cbc:Description": "POLIOFTAL SLN OFT FCO X 5 ML BLASKOV",
+			"cac:SellersItemIdentification": { "cbc:ID": "BLSK13" },
+			"cac:StandardItemIdentification": {
+				"cbc:ID": { "schemeID": "999", "schemeName": "Estándar de adopción del contribuyente", "$t": "BLSK13" }
+			}
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "5650.00" },
+			"cbc:BaseQuantity": { "unitCode": "NIU", "$t": "2.00" }
+		}
+	},
+	{
+		"cbc:ID": "3",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "NIU", "$t": "6.00" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "37200.00" },
+		"cac:Item": {
+			"cbc:Description": "TRAZODONA 50 MG CJA  X 50 TAB RECIPE",
+			"cac:SellersItemIdentification": { "cbc:ID": "RCP027" },
+			"cac:StandardItemIdentification": {
+				"cbc:ID": { "schemeID": "999", "schemeName": "Estándar de adopción del contribuyente", "$t": "RCP027" }
+			}
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "6200.00" },
+			"cbc:BaseQuantity": { "unitCode": "NIU", "$t": "6.00" }
+		}
+	},
+	{
+		"cbc:ID": "4",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "NIU", "$t": "4.00" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "6392.00" },
+		"cac:TaxTotal": {
+			"cbc:TaxAmount": { "currencyID": "COP", "$t": "1214.48" },
+			"cac:TaxSubtotal": {
+				"cbc:TaxableAmount": { "currencyID": "COP", "$t": "6392.00" },
+				"cbc:TaxAmount": { "currencyID": "COP", "$t": "1214.48" },
+				"cac:TaxCategory": { "cbc:Percent": "19.00", "cac:TaxScheme": { "cbc:ID": "01", "cbc:Name": "IVA" } }
+			}
+		},
+		"cac:Item": {
+			"cbc:Description": "BICARBONATO DE SODIO X 400 GR YOMA",
+			"cac:SellersItemIdentification": { "cbc:ID": "YOM030" },
+			"cac:StandardItemIdentification": {
+				"cbc:ID": { "schemeID": "999", "schemeName": "Estándar de adopción del contribuyente", "$t": "YOM030" }
+			}
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "1598.00" },
+			"cbc:BaseQuantity": { "unitCode": "NIU", "$t": "4.00" }
+		}
+	},
+	{
+		"cbc:ID": "5",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "NIU", "$t": "1.00" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "45824.00" },
+		"cac:Item": {
+			"cbc:Description": "DOLEX FORTE CJA X 48 TAB GLAXO",
+			"cac:SellersItemIdentification": { "cbc:ID": "GLX003" },
+			"cac:StandardItemIdentification": {
+				"cbc:ID": { "schemeID": "999", "schemeName": "Estándar de adopción del contribuyente", "$t": "GLX003" }
+			}
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "45824.00" },
+			"cbc:BaseQuantity": { "unitCode": "NIU", "$t": "1.00" }
+		}
+	}
+]

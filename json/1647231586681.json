@@ -1,0 +1,133 @@
+[
+	{
+		"cbc:ID": "1",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "6.0000" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "70419.540000" },
+		"cac:TaxTotal": {
+			"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+			"cbc:RoundingAmount": { "currencyID": "COP", "$t": "0.00" },
+			"cac:TaxSubtotal": {
+				"cbc:TaxableAmount": { "currencyID": "COP", "$t": "70419.54" },
+				"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+				"cac:TaxCategory": { "cbc:Percent": "0.00", "cac:TaxScheme": { "cbc:ID": "01", "cbc:Name": "IVA" } }
+			}
+		},
+		"cac:Item": {
+			"cbc:Description": "DOLEX JBE  2 + X 90 ML",
+			"cac:BuyersItemIdentification": { "cbc:ID": { "schemeAgencyID": "" } },
+			"cac:SellersItemIdentification": { "cbc:ID": "719026", "cbc:ExtendedID": {} },
+			"cac:StandardItemIdentification": { "cbc:ID": { "schemeID": "999", "$t": "719026" } },
+			"cac:AdditionalItemProperty": [
+				{ "cbc:Name": "ValorTotalItem", "cbc:Value": "70419.54" },
+				{ "cbc:Name": "CantidadxPrecioU", "cbc:Value": "70419.540000" },
+				{ "cbc:Name": "Pedida", "cbc:Value": "6" },
+				{ "cbc:Name": "Total_neto_und", "cbc:Value": "11736.59" },
+				{ "cbc:Name": "Grupo", "cbc:Value": "1 - MEDICAMENTOS" },
+				{ "cbc:Name": "SubGrupo", "cbc:Value": "719 – GLAXO SMITHKLINE CONSUMER" },
+				{ "cbc:Name": "Lote", "cbc:Value": "I0003A" },
+				{ "cbc:Name": "Vlote", "cbc:Value": "Dic 27 2023 12:00AM" },
+				{ "cbc:Name": "Ubica_item", "cbc:Value": "P1B34B" },
+				{ "cbc:Name": "Ubica_item_2", "cbc:Value": "P1B34B" },
+				{ "cbc:Name": "Peso_neto", "cbc:Value": "0.00" },
+				{ "cbc:Name": "Und_PesoN", "cbc:Value": "N/A" },
+				{ "cbc:Name": "Peso_bruto", "cbc:Value": "0.00" },
+				{ "cbc:Name": "Und_PesoB", "cbc:Value": "N/A" },
+				{ "cbc:Name": "Bodega_item", "cbc:Value": "1 - PRINCIPAL" },
+				{ "cbc:Name": "Registro_sanitario", "cbc:Value": "INVIMA2013M-0002141-R1" },
+				{ "cbc:Name": "Codigo_CUM", "cbc:Value": "19933739-1" },
+				{ "cbc:Name": "VRegistro_sanitario", "cbc:Value": "Nov 27 2014 12:00AM" },
+				{ "cbc:Name": "Alterno", "cbc:Value": "7707172681534" },
+				{ "cbc:Name": "TipoImpuesto", "cbc:Value": "1" },
+				{ "cbc:Name": "Operario", "cbc:Value": "0" },
+				{ "cbc:Name": "PorcentajeAplica", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleUnidadMedida", "cbc:Value": "94" },
+				{ "cbc:Name": "SubTotalLinea", "cbc:Value": "70419.54" },
+				{ "cbc:Name": "ValorTotalItem", "cbc:Value": "70419.54" },
+				{ "cbc:Name": "DetallePrecioUnitario", "cbc:Value": "11736.59" },
+				{ "cbc:Name": "DetalleValorBruto", "cbc:Value": "70419.54" },
+				{ "cbc:Name": "DetallePedido", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleTiempo", "cbc:Value": "0" },
+				{ "cbc:Name": "DetallePorcenApliDeducible", "cbc:Value": "0" },
+				{ "cbc:Name": "DetallePorcentajeDescuento", "cbc:Value": "0.00" },
+				{ "cbc:Name": "DetalleCodOperario", "cbc:Value": "0" },
+				{ "cbc:Name": "PorcentajeAplicaDeducible", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleValorDescuento", "cbc:Value": "0.00" }
+			]
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "11736.59" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "6.0000" }
+		}
+	},
+	{
+		"cbc:ID": "2",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "4.0000" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "25833.800000" },
+		"cac:AllowanceCharge": {
+			"cbc:ID": {},
+			"cbc:ChargeIndicator": "false",
+			"cbc:AllowanceChargeReasonCode": "00",
+			"cbc:AllowanceChargeReason": {},
+			"cbc:MultiplierFactorNumeric": "10.00",
+			"cbc:Amount": { "currencyID": "COP", "$t": "2870.40" },
+			"cbc:BaseAmount": { "currencyID": "COP", "$t": "28704.20" }
+		},
+		"cac:TaxTotal": {
+			"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+			"cbc:RoundingAmount": { "currencyID": "COP", "$t": "0.00" },
+			"cac:TaxSubtotal": {
+				"cbc:TaxableAmount": { "currencyID": "COP", "$t": "25833.80" },
+				"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+				"cac:TaxCategory": { "cbc:Percent": "0.00", "cac:TaxScheme": { "cbc:ID": "01", "cbc:Name": "IVA" } }
+			}
+		},
+		"cac:Item": {
+			"cbc:Description": "CREMA # 4 X 20 G - TECNOQUIMICAS",
+			"cac:BuyersItemIdentification": { "cbc:ID": { "schemeAgencyID": "" } },
+			"cac:SellersItemIdentification": { "cbc:ID": "156003", "cbc:ExtendedID": {} },
+			"cac:StandardItemIdentification": { "cbc:ID": { "schemeID": "999", "$t": "156003" } },
+			"cac:AdditionalItemProperty": [
+				{ "cbc:Name": "ValorTotalItem", "cbc:Value": "25833.80" },
+				{ "cbc:Name": "CantidadxPrecioU", "cbc:Value": "25833.800000" },
+				{ "cbc:Name": "Pedida", "cbc:Value": "4" },
+				{ "cbc:Name": "Total_neto_und", "cbc:Value": "6458.45" },
+				{ "cbc:Name": "Grupo", "cbc:Value": "1 - MEDICAMENTOS" },
+				{ "cbc:Name": "SubGrupo", "cbc:Value": "156 – TECNOQUIMICAS DERMATOLOGICO" },
+				{ "cbc:Name": "Lote", "cbc:Value": "211544" },
+				{ "cbc:Name": "Vlote", "cbc:Value": "Ago  1 2024 12:00AM" },
+				{ "cbc:Name": "Ubica_item", "cbc:Value": "P1E17B" },
+				{ "cbc:Name": "Ubica_item_2", "cbc:Value": "P1E17B" },
+				{ "cbc:Name": "Peso_neto", "cbc:Value": "0.00" },
+				{ "cbc:Name": "Und_PesoN", "cbc:Value": "N/A" },
+				{ "cbc:Name": "Peso_bruto", "cbc:Value": "0.00" },
+				{ "cbc:Name": "Und_PesoB", "cbc:Value": "N/A" },
+				{ "cbc:Name": "Bodega_item", "cbc:Value": "1 - PRINCIPAL" },
+				{ "cbc:Name": "Registro_sanitario", "cbc:Value": "INVIMA 2016M-0005352-R1" },
+				{ "cbc:Name": "Codigo_CUM", "cbc:Value": "19955193-39" },
+				{ "cbc:Name": "VRegistro_sanitario", "cbc:Value": "Jul 26 2021 12:00AM" },
+				{ "cbc:Name": "Alterno", "cbc:Value": "7702057088835" },
+				{ "cbc:Name": "TipoImpuesto", "cbc:Value": "1" },
+				{ "cbc:Name": "Operario", "cbc:Value": "0" },
+				{ "cbc:Name": "PorcentajeAplica", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleUnidadMedida", "cbc:Value": "94" },
+				{ "cbc:Name": "SubTotalLinea", "cbc:Value": "25833.80" },
+				{ "cbc:Name": "ValorTotalItem", "cbc:Value": "25833.80" },
+				{ "cbc:Name": "DetallePrecioUnitario", "cbc:Value": "7176.05" },
+				{ "cbc:Name": "DetalleValorBruto", "cbc:Value": "28704.20" },
+				{ "cbc:Name": "DetallePedido", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleTiempo", "cbc:Value": "0" },
+				{ "cbc:Name": "DetallePorcenApliDeducible", "cbc:Value": "0" },
+				{ "cbc:Name": "DetallePorcentajeDescuento", "cbc:Value": "10.00" },
+				{ "cbc:Name": "DetalleCodOperario", "cbc:Value": "0" },
+				{ "cbc:Name": "PorcentajeAplicaDeducible", "cbc:Value": "0" },
+				{ "cbc:Name": "DetalleValorDescuento", "cbc:Value": "2870.40" }
+			]
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "7176.05" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "4.0000" }
+		}
+	}
+]

@@ -1,0 +1,98 @@
+[
+	{
+		"cbc:ID": "1",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "12" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "69576" },
+		"cac:AllowanceCharge": {
+			"cbc:ID": "1",
+			"cbc:ChargeIndicator": "false",
+			"cbc:AllowanceChargeReason": {},
+			"cbc:MultiplierFactorNumeric": "5",
+			"cbc:Amount": { "currencyID": "COP", "$t": "3478.80" },
+			"cbc:BaseAmount": { "currencyID": "COP", "$t": "69576.00" }
+		},
+		"cac:Item": {
+			"cbc:Description": "DERMASKIN TX20 GR CR",
+			"cbc:PackSizeNumeric": "0",
+			"cac:SellersItemIdentification": { "cbc:ID": "11021002" },
+			"cac:StandardItemIdentification": { "cbc:ID": "0" }
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "5798" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "12" }
+		}
+	},
+	{
+		"cbc:ID": "2",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "10" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "40500" },
+		"cac:AllowanceCharge": {
+			"cbc:ID": "1",
+			"cbc:ChargeIndicator": "false",
+			"cbc:AllowanceChargeReason": {},
+			"cbc:MultiplierFactorNumeric": "8",
+			"cbc:Amount": { "currencyID": "COP", "$t": "3240.00" },
+			"cbc:BaseAmount": { "currencyID": "COP", "$t": "40500.00" }
+		},
+		"cac:Item": {
+			"cbc:Description": "DICLOFENACO 1% TX50 GR GEL",
+			"cbc:PackSizeNumeric": "0",
+			"cac:SellersItemIdentification": { "cbc:ID": "11020036" },
+			"cac:StandardItemIdentification": { "cbc:ID": "0" }
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "4050" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "10" }
+		}
+	},
+	{
+		"cbc:ID": "3",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "1" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "36399" },
+		"cac:AllowanceCharge": {
+			"cbc:ID": "1",
+			"cbc:ChargeIndicator": "false",
+			"cbc:AllowanceChargeReason": {},
+			"cbc:MultiplierFactorNumeric": "8",
+			"cbc:Amount": { "currencyID": "COP", "$t": "2911.92" },
+			"cbc:BaseAmount": { "currencyID": "COP", "$t": "36399.00" }
+		},
+		"cac:Item": {
+			"cbc:Description": "DOXICICLINA 100MG CX250 CAP",
+			"cbc:PackSizeNumeric": "0",
+			"cac:SellersItemIdentification": { "cbc:ID": "11020144" },
+			"cac:StandardItemIdentification": { "cbc:ID": "0" }
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "36399" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "1" }
+		}
+	},
+	{
+		"cbc:ID": "4",
+		"cbc:Note": {},
+		"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "15" },
+		"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "20550" },
+		"cac:AllowanceCharge": {
+			"cbc:ID": "1",
+			"cbc:ChargeIndicator": "false",
+			"cbc:AllowanceChargeReason": {},
+			"cbc:MultiplierFactorNumeric": "8",
+			"cbc:Amount": { "currencyID": "COP", "$t": "1644.00" },
+			"cbc:BaseAmount": { "currencyID": "COP", "$t": "20550.00" }
+		},
+		"cac:Item": {
+			"cbc:Description": "NAPROXENO 250MG CX10 TB",
+			"cbc:PackSizeNumeric": "0",
+			"cac:SellersItemIdentification": { "cbc:ID": "11020071" },
+			"cac:StandardItemIdentification": { "cbc:ID": "0" }
+		},
+		"cac:Price": {
+			"cbc:PriceAmount": { "currencyID": "COP", "$t": "1370" },
+			"cbc:BaseQuantity": { "unitCode": "94", "$t": "15" }
+		}
+	}
+]
