@@ -1,0 +1,68 @@
+{
+	"cbc:ID": "1",
+	"cbc:Note": {},
+	"cbc:InvoicedQuantity": { "unitCode": "94", "$t": "2.00" },
+	"cbc:LineExtensionAmount": { "currencyID": "COP", "$t": "38461.5400" },
+	"cac:TaxTotal": {
+		"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+		"cac:TaxSubtotal": {
+			"cbc:TaxableAmount": { "currencyID": "COP", "$t": "38461.54" },
+			"cbc:TaxAmount": { "currencyID": "COP", "$t": "0.00" },
+			"cac:TaxCategory": { "cbc:Percent": "0.00", "cac:TaxScheme": { "cbc:ID": "01", "cbc:Name": "IVA" } }
+		}
+	},
+	"cac:Item": {
+		"cbc:Description": "GUANTE TALLA M X 100 * protex",
+		"cac:SellersItemIdentification": { "cbc:ID": "983001", "cbc:ExtendedID": {} },
+		"cac:StandardItemIdentification": { "cbc:ID": { "schemeID": "999", "$t": "983001" } },
+		"cac:AdditionalItemProperty": [
+			{ "cbc:Name": "ValorTotalItem", "cbc:Value": "38461.54" },
+			{ "cbc:Name": "CantidadxPrecioU", "cbc:Value": "38461.5400" },
+			{ "cbc:Name": "Ocultar", "cbc:Value": {} },
+			{ "cbc:Name": "Agrupador", "cbc:Value": {} },
+			{ "cbc:Name": "CodigoUnidadMedida", "cbc:Value": "94" },
+			{ "cbc:Name": "Pedida", "cbc:Value": "2" },
+			{ "cbc:Name": "Total_neto_und", "cbc:Value": "19230.77" },
+			{ "cbc:Name": "Precio+Iva", "cbc:Value": "19230.77" },
+			{ "cbc:Name": "Grupo", "cbc:Value": "1 - MEDICAMENTOS" },
+			{ "cbc:Name": "SubGrupo", "cbc:Value": "983 – PROTEX" },
+			{ "cbc:Name": "Lote", "cbc:Value": "0420200809" },
+			{ "cbc:Name": "Vlote", "cbc:Value": "Abr  1 2025 12:00AM" },
+			{ "cbc:Name": "Peso_neto", "cbc:Value": "0.00" },
+			{ "cbc:Name": "Und_PesoN", "cbc:Value": "N/A" },
+			{ "cbc:Name": "Peso_bruto", "cbc:Value": "0.00" },
+			{ "cbc:Name": "Und_PesoB", "cbc:Value": "N/A" },
+			{ "cbc:Name": "Bodega_item", "cbc:Value": "1 - PRINCIPAL" },
+			{ "cbc:Name": "Registro_sanitario", "cbc:Value": "2014DM-0011605" },
+			{ "cbc:Name": "Alterno", "cbc:Value": "7707270363660" },
+			{ "cbc:Name": "TipoImpuesto", "cbc:Value": "1" },
+			{ "cbc:Name": "DetalleClaseOperacion", "cbc:Value": {} },
+			{ "cbc:Name": "Operario", "cbc:Value": "0" },
+			{ "cbc:Name": "NombreOperario", "cbc:Value": {} },
+			{ "cbc:Name": "DetalleClaseTrabajo", "cbc:Value": {} },
+			{ "cbc:Name": "PorcentajeAplica", "cbc:Value": "0" },
+			{ "cbc:Name": "DetalleUnidadMedida", "cbc:Value": "94" },
+			{ "cbc:Name": "SubTotalLinea", "cbc:Value": "38461.54" },
+			{ "cbc:Name": "ValorTotalItem", "cbc:Value": "38461.54" },
+			{ "cbc:Name": "DetallePrecioUnitario", "cbc:Value": "19230.77" },
+			{ "cbc:Name": "DetalleValorBruto", "cbc:Value": "38461.54" },
+			{ "cbc:Name": "DetallePedido", "cbc:Value": "0" },
+			{ "cbc:Name": "DetalleAdicional1", "cbc:Value": {} },
+			{ "cbc:Name": "DetalleAdicional2", "cbc:Value": {} },
+			{ "cbc:Name": "DetalleTiempo", "cbc:Value": "0" },
+			{ "cbc:Name": "DetallePorcenApliDeducible", "cbc:Value": "0" },
+			{ "cbc:Name": "DetallePorcentajeDescuento", "cbc:Value": "0.00" },
+			{ "cbc:Name": "DetalleCodOperario", "cbc:Value": "0" },
+			{ "cbc:Name": "DetalleNombreOperario", "cbc:Value": {} },
+			{ "cbc:Name": "PorcentajeAplicaDeducible", "cbc:Value": "0" },
+			{ "cbc:Name": "Ubicacion", "cbc:Value": {} },
+			{ "cbc:Name": "Alterno", "cbc:Value": {} },
+			{ "cbc:Name": "Abc", "cbc:Value": {} },
+			{ "cbc:Name": "DetalleValorDescuento", "cbc:Value": "0.00" }
+		]
+	},
+	"cac:Price": {
+		"cbc:PriceAmount": { "currencyID": "COP", "$t": "19230.77" },
+		"cbc:BaseQuantity": { "unitCode": "94", "$t": "2.00" }
+	}
+}
